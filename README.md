@@ -1,4 +1,4 @@
-### JavaScript Closures, Factory Functions, and Encapsulation**  
+### JavaScript Closures, Factory Functions, and Encapsulation
 
 #### **0:00 - 0:05 | Warm-up: Quick Concept Recall**  
 - Pop Quiz:
@@ -75,8 +75,22 @@ This is **closure** + **encapsulation** in a **factory function**.
 #### **0:30 - 0:45 | Real-World Scenario: Custom Logger**  
 
   *Create a logging system where:*  
-  - Each logger instance has a prefix (e.g., `[DEBUG]` or `[ERROR]`).  
+  - Each logger instance has a prefix (e.g., `[WARNING]` or `[ERROR]`).  
   - The logger should have a `log` method that prints messages with the prefix.  
+
+```js
+const createLogger = ???
+
+// Example usage
+const errorLogger = createLogger("[ERROR]");
+errorLogger.log("Something went wrong!"); // [ERROR] Something went wrong!
+
+const warningLogger = createLogger("[WARNING]");
+warningLogger.log("You are almost out of storage."); // [WARNING] You are almost out of storage.
+
+const errorLogger = createLogger("[INFO]");
+errorLogger.log("Learn more about closure at MDN."); // [INFO] Learn more about closure at MDN.
+```
 
 <details><summary>Solution</summary>
 
